@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -25,4 +26,6 @@ public class Event extends MainModel{
     private String title;
     @Column(name = "DESCRIPTION",length = 3000)
     private String description;
+
+    private List<Sponsor> sponsorList;
 }
