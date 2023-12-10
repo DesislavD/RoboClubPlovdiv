@@ -1,15 +1,10 @@
 package com.example.RoboClubPlovdiv.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.HashSet;
-import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -28,10 +23,10 @@ public class Project extends MainModel {
     private String temp;
 
 
-    //TODO
-    private List<Project> projectList;
-    private List<Event> eventList;
-    private List<Sponsor> sponsorList;
+//    //TODO
+//    @OneToMany(mappedBy = "projects")
+//    private Set<Project> projects;
+
 
 
 

@@ -16,7 +16,4 @@ public class ProjectDTO extends BaseDTO{
     private String description;
 
 
-
-    //TODO
-
 }

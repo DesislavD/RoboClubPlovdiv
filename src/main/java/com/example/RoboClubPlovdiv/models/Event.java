@@ -1,15 +1,13 @@
 package com.example.RoboClubPlovdiv.models;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -27,5 +25,7 @@ public class Event extends MainModel{
     @Column(name = "DESCRIPTION",length = 3000)
     private String description;
 
-    private List<Sponsor> sponsorList;
+//    //TODO
+//    @OneToMany(mappedBy = "events")
+//    private Set<Event> events;
 }

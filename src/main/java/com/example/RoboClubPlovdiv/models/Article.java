@@ -19,6 +19,6 @@ public class Article  extends MainModel{
     private String description;
 
     @ManyToOne()
-    @JoinColumn(name = "USER_ID")
+    @JoinColumn(name = "user_id")
     private User owner;
 }

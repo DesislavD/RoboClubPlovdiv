@@ -17,6 +17,7 @@ public class MainModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     Long id;
 
     @Column(name = "UPDATED_AT")

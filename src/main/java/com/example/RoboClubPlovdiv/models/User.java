@@ -37,6 +37,5 @@ public class User extends MainModel {
     @Column(name = "address")
     private String address;
     @OneToMany(mappedBy = "owner")
-    @JoinColumn(name = "USER_ID")
     private Set<Article> articles;
 }
